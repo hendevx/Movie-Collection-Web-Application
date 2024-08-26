@@ -1,0 +1,4 @@
+venv
+movie_collection_backend/movie_collection/__pycache__/
+movie_collection_backend/movie_collection_backend/__pycache__/
+movie_collection_backend/movie_collection/migrations/__pycache__/
