@@ -15,10 +15,13 @@ This Django web application allows users to create collections of movies they li
 
 ### Prerequisites
 
-- Python 3.8+
-- Django 4.0+
+- Python 3.12.4
+- Django 5.1
 - `requests` library for API integration
 - `djangorestframework` for building RESTful APIs
+- `djangorestframework-simplejwt` for JWT authentication
+- `mysqlclient` for database connectivity
+- `django-environ` for os environment variables
 
 ### Installation
 
@@ -47,8 +50,8 @@ This Django web application allows users to create collections of movies they li
     Create a `.env` file in the root directory and add the following:
 
     ```env
-    MOVIE_API_USERNAME=iNd3jDMYRKsN1pjQPMRz2nrq7N99q4Tsp9EY9cM0
-    MOVIE_API_PASSWORD=Ne5DoTQt7p8qrgkPdtenTK8zd6MorcCR5vXZIJNfJwvfafZfcOs4reyasVYddTyXCz9hcL5FGGIVxw3q02ibnBLhblivqQTp4BIC93LZHj4OppuHQUzwugcYu7TIC5H1
+    MOVIE_API_USERNAME=<username>
+    MOVIE_API_PASSWORD=<password>
     ```
 
 5. **Apply migrations:**
