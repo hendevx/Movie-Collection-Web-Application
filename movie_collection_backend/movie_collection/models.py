@@ -2,13 +2,16 @@ from django.db import models
 from collections import Counter
 import uuid
 
+from django.db import models
+
 class Movie(models.Model):
     """Model representing a movie."""
-
-    uuid = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     title = models.CharField(max_length=255)
-    description = models.TextField()
-    genres = models.CharField(max_length=255, blank=True)
+    genre = models.CharField(max_length=100)
+    director = models.CharField(max_length=100)
+    release_year = models.IntegerField()
+    rating = models.FloatField()
+    poster = models.ImageField(upload_to='posters/', blank=True, null=True)
 
     def __str__(self):
         return self.title
